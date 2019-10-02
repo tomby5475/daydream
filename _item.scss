@@ -1,35 +1,80 @@
 
-.logo {
-  margin-left: 150px;
-}
-body {
-  font-family: 'Lato', sans-serif;
-}
-#wrapper{
-  background: #e2e2e2;
-}
-.item {
-  &_wrapper {
+#header {
+  padding: 16px 0 0;
 
-  margin: 0 0 0;
-  width: 1440px;
-
-
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
-.item_component {
-  display: flex;
-  flex-direction: row;
+body {
+  font: 400 20px/1.1 'Lato', sans-serif;
 }
-.item_component__img01 {
-  margin-top: 25px;
-  margin-left: 150px;
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+#container{
+  background: #e2e2e2;
+  overflow: hidden;
   position: relative;
 }
-q.quote01 {
+.logo {
+  display: inline-block;
+  vertical-align: top;
+  width: 206px;
+  height: 55px;
+  overflow: hidden;
+  background-image: url("../images/daydream-logo.png");
+  background-repeat: no-repeat;
+}
+.social_links {
+  display: flex;
+  justify-content: center;
+  background: white;
+  border-radius: 32px;
+  width: 32px;
+  height: 32px;
+}
+.icon {
+display: inline-block;
+&:hover {
+    background: black;
+    path {
+      fill: white;
+    }
+}
+&:active {
+  background: #e2e2e2;
+  path {
+    fill: black;
+  }
+}
+}
+.icon1{
+  position: relative;
+
+}
+.icon2{
+  margin-left: 24px;
   position: absolute;
-  quotes: none;
-  color: white;
+}
+.hero-box {
+  display: flex;
+  justify-content: space-between;
+&__img01 {
+  position: relative;
+  padding: 10px;
+}
+&__img02 {
+  max-width: 359px;
+  margin-left: 10px;
+  position: relative;
+}
+}
+figcaption.quote01 {
+  position: absolute;
   font-size: 36px;
   font-style: italic;
   max-width: 470px;
@@ -37,85 +82,83 @@ q.quote01 {
   bottom: 68px;
   left: 32px;
 }
-
-.item_component__img02 {
-  margin-top: 25px;
-  max-width: 359px;
-  margin-left: 10px;
-  position: relative;
-
-}
-q.quote02 {
-  position: absolute;
-  quotes: none;
+a.quote {
+  text-decoration: none;
   color: white;
+}
+
+.telka {
+  margin-bottom: 6px;
+}
+figcaption.quote02 {
+  position: absolute;
   width: 243px;
   line-height: normal;
   font-size: 26px;
   font-style: italic;
-  top: 157px;
+  bottom: 285px;
   left: 32px;
 }
 .item_top {
-  max-width: 359px;
   background: #d0dfda;
-  height: 250px;
-  margin-top: 10px;
   display: flex;
- align-items: center;
- position: relative;
+  align-items: center;
+  position: relative;
+  height: 250px;
 }
-  p.item_top {
-    font-family: Lato;
-    font-size: 26px;
-    font-style: italic;
-    margin-left: 20px;
-    max-width: 270px;
+.quote_top {
+  text-decoration: none;
+  color: black;
 }
-
+h2 {
+  padding: 0;
+  font-family: Lato;
+  font-size: 26px;
+  font-style: italic;
+  margin-left: 32px;
+  max-width: 270px;
+  font-weight: normal;
+}
 .button {
-position: absolute;
-bottom: 33px;
-left: 33px;
-color: #4a4a4a;
-text-decoration: none;
-display: inline-block;
-font-size: 11px;
-
+  position: absolute;
+  bottom: 33px;
+  left: 33px;
+  color: #4a4a4a;
+  text-decoration: none;
+  font-size: 11px;
+}
+.arrow {
+  max-width: 11px;
+  position: absolute;
+  left: 124px;
+  bottom: 35px;
 }
 .scroll {
   overflow: auto;
 }
-
 .item_component__price {
   @extend %font-large;
-
 }
-
-ul {
+.clothes {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
 }
-li {
+.global {
   background: #f3f3f1;
   margin: 36px 30px 0 0;
 }
-
 li.style01 {
   background: #f3f3f1;
 }
-
 li.style02 {
   background: white;
 }
-
 li.size01 {
   width: 258px;
   height: 458px;
 }
-
 li.size02 {
 width: 552px;
 height: 458px;
