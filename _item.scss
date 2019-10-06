@@ -15,7 +15,7 @@ body {
   margin: 0 auto;
   max-width: 1140px;
 }
-#container{
+#container {
   background: #e2e2e2;
   overflow: hidden;
   position: relative;
@@ -29,16 +29,18 @@ body {
   background-image: url("../images/daydream-logo.png");
   background-repeat: no-repeat;
 }
-.social_links {
+li.social_links {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 24px;
+}
+a.social_links {
   display: flex;
   justify-content: center;
   background: white;
   border-radius: 32px;
   width: 32px;
   height: 32px;
-}
-.icon {
-display: inline-block;
 &:hover {
     background: black;
     path {
@@ -52,20 +54,12 @@ display: inline-block;
   }
 }
 }
-.icon1{
-  position: relative;
-
-}
-.icon2{
-  margin-left: 24px;
-  position: absolute;
-}
 .hero-box {
   display: flex;
   justify-content: space-between;
 &__img01 {
   position: relative;
-  padding: 10px;
+  margin: 0;
 }
 &__img02 {
   max-width: 359px;
